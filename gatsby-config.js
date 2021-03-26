@@ -1,10 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `kiita`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    {resolve: `gatsby-plugin-google-fonts`,
+    options: {
+      fonts: [
+        `limelight`,
+        `DotGothic16`,
+        `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+      ],
+      display: 'swap'
+    }},
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

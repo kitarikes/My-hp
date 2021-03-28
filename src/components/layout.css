@@ -601,3 +601,10 @@ pre tt:after {
 a{
   margin-right: 8px;
 }
+a:link, a:visited, a:hover, a:active {
+  color:#a038a3;
+}
+
+#gatsby-focus-wrapper > nav > ul > li > a{
+  color:#424141;
+}

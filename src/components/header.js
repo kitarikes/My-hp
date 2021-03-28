@@ -1,6 +1,6 @@
 import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+// import PropTypes from "prop-types"
+// import { Link } from "gatsby"
 
 // const Header = ({ siteTitle }) => (
 //   <header
@@ -72,9 +72,24 @@ const sidebar = {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
+  const variants = {
+    open: {
+      transition: {
+        y: { stiffness: 1000, velocity: -100 }
+      },
+      zIndex: 100
+    },
+    closed: {
+      transition: {
+        delay: 1
+      },
+      zIndex: -100
+    }
+  };
 
   return (
     <motion.nav
+      variants={variants}
       initial={false}
       animate={isOpen ? "open" : "closed"}
       custom={height}

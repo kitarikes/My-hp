@@ -11,16 +11,16 @@ import SNSBtn from "../components/sns/sns-btn"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>自己紹介</h1>
+    <h1>HOME</h1>
     <li>名前: <p>きた ___kiita_#7915</p></li>
     <li>所属: <p>九州大学応化分子コース３年(2021年度)</p></li>
     <StaticImage
-      src="../images/top.jpg"
+      src="../images/tmngRPty.jpg"
       width={300}
       quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="home-img"
-      style={{ marginBottom: `1.45rem` }}
+      style={{ marginBottom: `1.45rem` , zIndex: `-1`}}
     />
     <li>技術スタック: <br />
       $ python<br />
@@ -38,9 +38,9 @@ const IndexPage = () => (
     <SNSBtn/>
     <h3 class="mrgn">Lern more...</h3>
     <p>
-      <Link to="/page-2/">Go to "My timeline"</Link> <br />
-      <Link to="/page-2/">Go to "My hobby"</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+      <Link to="/about-me/">"Inspect me ..."</Link> <br />
+      <Link to="/my-hobby/">Go to "My hobby"</Link> <br />
+      <Link to="#">↑ Go back to the top pf page</Link>
     </p>
     <p>
       このサイトはGatsby.jsを用いて作りました。
